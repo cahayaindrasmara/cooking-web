@@ -1,0 +1,71 @@
+/* ----------------- */
+/* Import Statements */
+/* ----------------- */
+@import url("../css/vendor/bootstrap.min.css");
+@import url("../font/inter/stylesheet.css");
+@import url("../css/vendor/swiper-bundle.min.css");
+
+/* ---------------------------- */
+/*  Custom Properties            */
+/* ---------------------------- */
+:root {
+    --primary: #000000;
+    --secondary: #FFFFFF;
+    --text-color: rgba(0,0,0,0.6);
+    --accent-color: #FF6363;
+    --accent-color-2: #DBE2E5;
+    --accent-color-3: #E7F9FD;
+    --accent-color-4: #E7FAFE;
+    --light-blue-transparent-1: rgba(231,249,253,0);
+    --light-blue-solid-1: rgba(231,249,253,1);
+    --red-transparent-2: rgba(204,38,27,0);
+    --red-solid-2: rgba(204,38,27,0.1);
+    --yellow-transparent-3: rgba(240,158,0,0);
+    --yellow-solid-3: rgba(240,158,0,0.1);
+    --black-transparent-4: rgba(0,0,0,0);
+    --black-solid-4: rgba(0,0,0, 0.5);
+}
+
+/* ---------------------------- */
+/* Typography                   */
+/* ---------------------------- */
+
+/* ----------------- */
+/* Header and Navbar */
+/* ----------------- */
+
+/* ---------------------------- */
+/* Background and Setting Color */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* Buttons & Links              */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* Section and Container       */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* Card Setting                 */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* Swiper Setting              */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* Forms and Inputs             */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/* Utilss                       */
+/* ---------------------------- */
+
+@media only screen and(max-width: 1024px) {
+
+}
+
+@media only screen and(max-width: 768px) {
+    
+}
