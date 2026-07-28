@@ -23,7 +23,7 @@
   --yellow-transparent: rgba(240, 158, 0, 0);
   --yellow-solid: rgba(240, 158, 0, 0.1);
   --black-transparent: rgba(0, 0, 0, 0);
-  --black-solid: rgba(0, 0, 0, 0.5);
+  --black-solid: rgba(0, 0, 0, 0.05);
   --font-1: "Inter", sans-serif;
 }
 
@@ -79,6 +79,11 @@ a {
 p {
   font-size: 16px;
   color: var(--text-color);
+}
+
+span {
+  font: 16px;
+  font-weight: 600;
 }
 
 .small-text {
@@ -423,10 +428,14 @@ a {
   border: 1px solid var(--primary);
 }
 
-.btn-accent.primary {
+.btn-accent.light-blue {
+  color: var(--primary);
+  background-color: var(--accent-color-4);
 }
 
-.btn-accent.primary:hover {
+.btn-accent.light-blue:hover {
+  color: var(--secondary);
+  background-color: var(--primary);
 }
 
 /* ---------------------------- */
