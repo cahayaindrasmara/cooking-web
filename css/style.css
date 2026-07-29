@@ -108,7 +108,8 @@ span {
   max-width: 150px;
 }
 
-.logo-footer {
+.logo-footer img {
+  max-width: 150px;
 }
 
 .offcanvas {
@@ -162,6 +163,10 @@ span {
 }
 
 .nav-link.active {
+}
+
+.link {
+
 }
 
 .navbar-toggler {
