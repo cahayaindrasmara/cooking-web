@@ -624,6 +624,10 @@ a {
   max-width: 700px;
 }
 
+.title-center .text-instagram {
+  max-width: 750px;
+}
+
 .card-recipes {
   display: flex;
   flex-direction: column;
@@ -728,6 +732,10 @@ a {
   max-width: 50px;
   bottom: 15%;
   left: -3%;
+}
+
+.img-instagram {
+  border-radius: 1rem;
 }
 /* ---------------------------- */
 /* Swiper Setting               */
