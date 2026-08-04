@@ -675,6 +675,60 @@ a {
 .card-detail-recipes p {
   margin: 0;
 }
+
+.content-learn-more-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.content-learn-more-left p {
+  max-width: 500px;
+}
+
+.card-learn-more-right {
+  background: linear-gradient(
+    to bottom,
+    var(--light-blue-transparent) 0%,
+    var(--light-blue-solid) 100%
+  );
+  border-radius: 2rem;
+  position: relative;
+}
+
+.card-learn-more-right .chef-img {
+  margin-left: -3rem;
+}
+
+.card-learn-more-right .chef-img-1 {
+  position: absolute;
+  max-width: 80px;
+  top: 25%;
+  right: 7%;
+}
+
+.card-learn-more-right .chef-img-2 {
+  position: absolute;
+  max-width: 50px;
+  top: 15%;
+  right: 27%;
+}
+
+.card-learn-more-right .chef-img-3 {
+  position: absolute;
+  max-width: 80px;
+  top: 10%;
+  left: 12%;
+}
+
+.card-learn-more-right .chef-img-4 {
+  position: absolute;
+  max-width: 50px;
+  bottom: 15%;
+  left: -3%;
+}
 /* ---------------------------- */
 /* Swiper Setting               */
 /* ---------------------------- */
