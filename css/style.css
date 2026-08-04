@@ -166,7 +166,6 @@ span {
 }
 
 .link {
-
 }
 
 .navbar-toggler {
@@ -447,6 +446,20 @@ a {
 /* Overlay                      */
 /* ---------------------------- */
 .card-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 69, 81, 0.6) 100%
+  );
+  transition:
+    background 0.3s,
+    border-radius 0.3s,
+    opacity 0.3s;
 }
 
 .blog-overlay {
@@ -505,12 +518,89 @@ a {
 /* ---------------------------- */
 /* Card Setting                 */
 /* ---------------------------- */
-.card {
+.card-hero {
+  background-color: var(--accent-color-4);
+  padding: 3rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
-.card-accent {
+.content-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
 }
 
+.subtitle-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--secondary);
+  width: max-content;
+  position: relative;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.content-hero p {
+  max-width: 520px;
+}
+
+.content-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--secondary);
+  width: max-content;
+  position: relative;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-detail p {
+  margin: 0;
+}
+
+.created-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.created-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.created-content img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.created-content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.created-content .text p {
+  margin: 0;
+}
 /* ---------------------------- */
 /* Swiper Setting               */
 /* ---------------------------- */
