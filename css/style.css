@@ -601,6 +601,16 @@ a {
 .created-content .text p {
   margin: 0;
 }
+
+.card-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+  padding-inline: 3rem;
+  border-radius: 30px;
+}
 /* ---------------------------- */
 /* Swiper Setting               */
 /* ---------------------------- */
