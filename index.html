@@ -27,16 +27,27 @@
                     <div class="collapse navbar-collapse flex-grow-1" id="navMenu">
                         <ul class="navbar-nav mx-auto gap-3">
                             <li class="nav-item">
-                                <a href="#home" class="nav-link">Home</a>
+                                <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#recipes" class="nav-link">Recipes</a>
+                                <a href="recipes-detail.html" class="nav-link">Recipes</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="blog-list-page.html" class="dropdown-item">Blog List</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-post-page.html" class="dropdown-item">Blog Post</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="#blog" class="nav-link">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link">Contact</a>
+                                <a href="contact-page.html" class="nav-link">Contact</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#about-us" class="nav-link">About Us</a>
@@ -674,8 +685,13 @@
                         Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore
                         et dolore magna aliqut enim ad minim
                     </p>
-                    <form action="">
-
+                    <form class="subscribe">
+                        <div class="input-group position-relative gap-3">
+                            <input class="input" type="text" placeholder="Your Email Address">
+                            <button class="btn btn-accent">
+                                <span>Seacrh</span>
+                            </button>
+                        </div>
                     </form>
                     <div class="subscribe-img-left">
                         <img src="image/subscribe-img-1.png" class="img-fluid" alt="">

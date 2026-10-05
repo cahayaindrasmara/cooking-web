@@ -232,13 +232,13 @@ span {
 
 .dropdown-item {
   padding-block: 0.75rem;
-  color: var(--text-color);
+  color: var(--primary);
   font-family: var(--font-1);
   font-size: 0.95rem;
   font-weight: 400;
   padding-inline: 2rem;
   text-align: start;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
@@ -247,7 +247,7 @@ span {
 }
 
 .dropdown-menu {
-  transition: all 0.3s ease;
+  transition: all 0.3sease;
 }
 
 .dropdown-item.active {
@@ -256,8 +256,8 @@ span {
 }
 
 .dropdown-item:hover {
-  background-color: var(--accent-color);
-  color: var(--primary);
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .dropdown-item:focus {
@@ -802,6 +802,166 @@ a {
 .subscribe-img-right img {
   width: 50%;
 }
+
+.content-recipe-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content-recipe-details img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.content-recipe-details .fa-stopwatch {
+  font-size: 20px;
+}
+
+.content-recipe-details .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.content-recipe-details .text p {
+  margin: 0;
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.content-recipe-details .text .small-text {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.content-recipe-details .text .reviewer {
+  font-weight: 600;
+}
+
+.content-recipe-details .small-text {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.content-print {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content-print .background {
+  background-color: var(--accent-color-4);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.content-print .background .fa-print {
+  font-size: 20px;
+}
+
+.img-left-recipes-detail {
+  position: relative;
+}
+
+.img-left-recipes-detail img {
+  width: 100%;
+  border-radius: 30px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.card-nutrition {
+  background-color: var(--accent-color-4);
+  padding: 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.card-nutrition .nutrition-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--accent-color-2);
+}
+
+.card-nutrition .nutrition-item .unit {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.text-recipes-detail {
+  text-align: justify;
+}
+
+.card-other-recipes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-other-recipes img {
+  max-height: 120px;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-other-recipes .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-other-recipes h6,
+.card-other-recipes p {
+  margin: 0;
+}
+
+.blog-recipes {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.blog-recipes img {
+  max-height: 250px;
+  width: 70%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.blog-recipes .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-recipes .text-reviewer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog-recipes .text-reviewer h6,
+.blog-recipes .text-reviewer p {
+  margin: 0;
+}
+
+.blog-recipes .text-reviewer img {
+  width: 50px;
+  border-radius: 50%;
+}
+
 /* ---------------------------- */
 /* Swiper Setting               */
 /* ---------------------------- */
@@ -896,16 +1056,52 @@ a {
 /* ---------------------------- */
 /* Forms and Inputs             */
 /* ---------------------------- */
-/* .form {
+form {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 16px;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+form.subscribe {
+  width: 30%;
+  background-color: var(--secondary);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe .input-group {
+  justify-content: space-between;
+}
+
+input {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.input-blog {
+  width: 80%;
 }
 
 .form input:invalid {
+  outline: none;
+  border: none;
 }
 
 .form input:valid {
+  outline: none;
+  border: none;
 }
 
 .form input:focus {
+  outline: none;
+  border: none;
 }
 
 .form input::placeholder {
@@ -915,6 +1111,7 @@ a {
 }
 
 .form select:valid {
+  
 }
 
 .form select:focus {
@@ -930,7 +1127,7 @@ a {
 }
 
 .form textarea::placeholder {
-} */
+}
 
 /* ---------------------------- */
 /* Map Elements                 */
@@ -1115,6 +1312,80 @@ a {
 /* ---------------------------- */
 /* Utilss                       */
 /* ---------------------------- */
+.line {
+  height: 50px;
+  width: 1px;
+  background-color: var(--accent-color-2);
+}
+
+.main-dish-list {
+  width: 100%;
+}
+
+.main-dish-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 18px 0;
+  border-bottom: 1px solid #eeeeee;
+
+  cursor: pointer;
+}
+
+/* Sembunyikan checkbox bawaan browser */
+.main-dish-item input {
+  display: none;
+}
+
+/* Lingkaran checkbox */
+.checkmark {
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid #d8dfe3;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+/* Icon centang */
+.checkmark i {
+  display: none;
+  color: white;
+  font-size: 10px;
+}
+
+/* Checkbox yang checked */
+.main-dish-item input:checked + .checkmark {
+  background-color: #111111;
+  border-color: #111111;
+}
+
+.main-dish-item input:checked + .checkmark i {
+  display: block;
+}
+
+/* Text yang selesai */
+.main-dish-item.completed .main-dish-text {
+  color: #d3d3d3;
+  text-decoration: line-through;
+}
+
+/* Kalau ingin otomatis berdasarkan checked */
+.main-dish-item input:checked ~ .main-dish-text {
+  color: #d3d3d3;
+  text-decoration: line-through;
+}
+
+.main-dish-item input:checked ~ div .main-dish-text {
+  color: #d3d3d3;
+  text-decoration: line-through;
+}
 
 @media only screen and(max-width: 1024px) {
   /* ---------------------------- */
